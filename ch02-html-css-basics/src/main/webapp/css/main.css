@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body{
+	padding: 0; /* 위 오 아 왼 */ /* 위 아래 좌우 */  /* 상하 좌우 */
+	margin: 10px;
+	font-size: 12px;
+	font-family: Arial, Helvertica,eane-serif;
+	color: #333;
+}
