@@ -6,7 +6,7 @@
 <style media="screen">
 * {
 	margin: 0;
-	padding: 0
+	padding: 0;
 }
 
 body {
@@ -14,6 +14,40 @@ body {
 	font-size: 0.75em;
 	color: #333
 }
+
+.tbl-ex{
+	margin: 100px auto;
+	border: 1px solid #333;
+	border-collapse: collapse;
+	border-width: 1px 0;
+	cursor:alias;
+}
+
+.tbl-ex td, .tbl-ex th{
+	border: 1px solid #333;
+	padding: 8px;
+	border-width: 1px 0;
+}
+
+.tbl-ex th{
+	background-color: #999;
+	color: #fff;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+}
+
+.tbl-ex td{
+	border-style: dotted;
+}
+
+.tbl-ex tr:hover td, .tbl-ex tr:nth-child(odd):hover td{
+	background-color: #fc6;
+}
+
+.tbl-ex tr:nth-child(odd) td{
+	background-color: #E8ECF6;
+}
+
 </style>
 </head>
 <body>
@@ -30,7 +64,7 @@ body {
 			<td>모든 HTML에 적용</td>
 			<td>IE4, FF1,Safari 1, 크롬 1,오페라 3.5, CSS1</td>
 		</tr>
-		<tr class="even">
+		<tr>
 			<td>.classname</td>
 			<td>클래스</td>
 			<td>클래스로 정의해 준 HTML 태그</td>
@@ -42,7 +76,7 @@ body {
 			<td>특정 HTML 태그에 종속된 클래스</td>
 			<td>IE4, FF1,Safari 1, 크롬 1,오페라 3.5, CSS1</td>
 		</tr>
-		<tr class="even">
+		<tr>
 			<td>#idname</td>
 			<td>아이디</td>
 			<td>아이디로 정의해준 HTML 태그</td>
@@ -54,7 +88,7 @@ body {
 			<td>특정 HTML 태그에 종속된 아이디</td>
 			<td>IE4, FF1,Safari 1, 크롬 1,오페라 3.5, CSS1</td>
 		</tr>
-		<tr class="even">
+		<tr>
 			<td>*</td>
 			<td>전체 선택</td>
 			<td>모든 HTML 태그에 적용</td>
