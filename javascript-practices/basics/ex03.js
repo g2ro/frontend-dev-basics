@@ -14,6 +14,8 @@ var x;      // 변수 x 정의
 console.log("============[05] undefined와 null의 동치(equal) 비교");
 console.log(myVar1 == myVar2); // 값비교
 console.log(myVar1 === myVar2); // 타입비교 + (값비교, 동일성)
+console.log(myVar1 == myVar3);
+console.log(myVar1 === myVar3);
 
 console.log("============[06] Equal Operators(==, ===) 와 형변환");
 

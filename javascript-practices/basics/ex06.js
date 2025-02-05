@@ -40,6 +40,7 @@ i2.another = {
     name: "마이콜",
     age: 20
 };
+console.log(i2);
 console.log(i2.another);
 
 i1.another = {};            // new Number(i1).another = {};
