@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-	<title>ex07</title>
-	<meta charset="UTF-8">
+<title>ex07</title>
+<meta charset="UTF-8">
+<script>
+window.onload = function(){
+	setTimeout(function(){
+		var html = "<h3>Hello DOM</h3>";
+		/* document.body.innerHTML = html; 기존에 있는 것을 지우고 바꿈*/
+		document.body.innerHTML = document.body.innerHTML + html;
+	}, 3000);
+}
+</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>

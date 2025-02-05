@@ -3,6 +3,28 @@
 <head>
 	<title>ex01</title>
 	<meta charset="UTF-8">
+<script>
+window.n = "둘리";
+
+console.log(window.n, n);
+
+var e = 'dooly@gmail.com';
+console.log(window.e, e);
+
+setTimeout(function(){
+	var child = window.open('popup.html', 'popup', 'width=600, height=400');
+	
+	setTimeout(function(){
+		child.documnet.write("<h1> popup contents changed!! </h1>")	
+	}, 2000);
+	
+	setTimeout(function(){
+		child.moveTo(200, 200);	
+	}, 4000);
+	
+}, 2000);
+
+</script>
 </head>
 <body>
 	<h1>BOM(Browser Object Model)</h1>

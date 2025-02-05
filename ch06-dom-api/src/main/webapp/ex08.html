@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-	<title>ex08</title>
-	<meta charset="UTF-8">
+<title>ex08</title>
+<meta charset="UTF-8">
+<script>
+window.onload = function(){
+	setTimeout(function(){
+		var imgElement = document.createElement('img');
+		
+		imgElement.src = '/ch06/check.png';
+		imgElement.alt = '체크이미지';
+		imgElement.title = '체크이미지';
+		/* imgElement.style.width = '20px'; */
+		
+		document.body.appendChild(imgElement);
+	},3000);
+}
+</script>
 </head>
 <body>
 	<h1 id='h' data-no='10'>DOM(Document Object Model)</h1>

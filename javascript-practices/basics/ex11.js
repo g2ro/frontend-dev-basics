@@ -105,10 +105,10 @@ var yourObject = {
 
 myObject.f1.apply(yourObject);
 
-// call: 호출되는 함수의 this를 첫번째 파라미터로 전달되는 객체로 바꿔서 즉시 그 함수를 호출한다.
+// call: 호출되는 함수의 this를 첫번째 파라미터로 전달되는 객체로 바꿔서 즉시 그 함수를 호출한다. (그 함수의 파라미터도 함께 전달 가능)
 myObject.f2.call(yourObject, "Hello");
 
-// bind: 호출되기 전의 함수의 this를 파파미터 전달되는 객체로 바인드한다.
+// bind: 호출되기 전의 함수의 this를 파파미터 전달되는 객체로 바인드한다. 
 var f3 = function(){
     console.log(this.v);
 }.bind(myObject);
