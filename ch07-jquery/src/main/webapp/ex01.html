@@ -1,8 +1,29 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>jquery practices</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jquery practices</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+// 버전 확인
+console.log(jQuery().jquery, $().jquery);
+
+window.addEventListener('load', function(){
+	var $obj = $('h1');
+	
+	console.log(
+			typeof(jQuery), 
+			$ === jQuery,
+			typeof($obj), 
+			"length: " + $obj.length, 
+			$obj instanceof Array);
+	
+	setTimeout(function(){
+		$obj.css('color', 'red');
+	}, 2000);
+});
+</script>
+<!-- jquery CDN -->
 </head>
 <body>
 	<h1>jQuery 로딩</h1>

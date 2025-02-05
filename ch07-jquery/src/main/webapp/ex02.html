@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>jquery practices</title>
-	<script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jquery practices</title>
+<script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+<script>
+// 1. DOM이 완료된 시점: DOM API를 직접 사용
+window.addEventListener('load', function(){
+	var $obj = $('#header');
+	console.log($obj[0], $obj.get(0));
+});
+
+// 2. DOM이 완료된 시점 : jQuery를 사용하는 방법1
+$(document).ready(function(){
+	var $obj = $('#header');
+	console.log($obj[0], $obj.get(0));
+});
+
+// 3. DOM이 완료된 시점 : jQuery를 사용하는 방법2
+$(function(){
+	var $obj = $('#header');
+	console.log($obj[0], $obj.get(0));
+});
+</script>
 </head>
 <body>
 	<h1 id="header">jQuery 함수로 HTMLElement를 선택하는 시점</h1>
